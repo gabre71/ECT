@@ -1,0 +1,13 @@
+<%= simple_form_for(@time_sheet,  :html => {:class => 'form-horizontal', :id =>'edit_time_sheet' } ) do |f| %>
+  <div class="form-inputs">
+    <%= f.association :user , :disabled => true%>
+    <%= f.input :work_date, :as => :string, :disabled => true%>
+    <%= f.association :time_frame , :disabled => true%>
+    <%= f.association :work_site, :disabled => disable_control_for(@time_sheet) %>
+    <%= f.input :start_time, :as => :string, :label=> "Check in time - Office",:disabled => disable_control_for(@time_sheet, "start_time")%>
+    <%= f.input :cc_start_time, :as => :string, :label=> "Check in time - Call center", :disabled => disable_control_for(@time_sheet, "end_time")%>
+    <%= f.input :cc_end_time, :as => :string, :label=> "Check out time - Call center", :disabled => disable_control_for(@time_sheet, "end_time")%>
+    <%= f.input :lateness , :disabled => true%>
+    <%= f.button :submit , :class => "btn btn-large btn-success"%>
+  </div>
+<% end %>

@@ -1,0 +1,5 @@
+<%= simple_form_for(@work_site, :html => { :class => 'form-horizontal' }) do |f| %>
+  <%= f.input :name, :label =>"Site" %>
+  <%= f.input :distance, :label =>"Distance (km)" %>
+  <%= f.button :submit,  :class => "btn btn-large btn-success" %>
+<% end %>

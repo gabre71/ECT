@@ -1,0 +1,12 @@
+<h3>Edit <%= resource_name.to_s.humanize %></h3>
+<%= simple_form_for(@user , :url => registration_path(@user), :html => { :method => :put, :class => 'form-horizontal' }) do |f| %>
+  <%= f.error_notification %>
+  <%= display_base_errors resource %>
+  <%= f.input :name, :autofocus => true %>
+  <%= f.input :email, :required => true %>
+  <%= f.input :skype %>
+  <%= f.input :phone %>
+
+  <%= f.button :submit, 'Update', :class => "btn btn-large btn-success" %>
+<% end %>
+<%= link_to "Back", :back , :class => "btn btn-mini btn-primary"%>

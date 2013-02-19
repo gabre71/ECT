@@ -1,0 +1,29 @@
+<h3>Listing WorkSite</h3>
+<div class="span8">
+<table class= "table table-condensed" >
+  <thead>
+    <tr>
+      <th>Site</th>
+      <th>Distance</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @work_sites.each do |work_site| %>
+      <tr>
+        <td><%= work_site.name %></td>
+        <td><%= work_site.distance %></td>
+        <td><%= link_to 'Edit', edit_work_site_path(work_site) ,:class => 'btn btn-mini btn-primary'%>
+            <%= link_to 'Destroy', work_site, method: :delete, data: { confirm: 'Are you sure?' },:class => 'btn btn-mini btn-danger' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">
+        <%= link_to 'New WorkSite', new_work_site_path, :class => 'btn btn-mini btn-primary'%>
+      </td>
+    </tr> 
+  </tfoot>
+</table>
+</div>

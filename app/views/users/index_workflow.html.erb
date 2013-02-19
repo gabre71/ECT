@@ -1,0 +1,33 @@
+<h3>Users</h3>
+<div class="row">
+  <div class="span8">
+  <table class="table table-condensed">
+      <thead>
+        <tr>
+            <th>Request owner</th>
+            <th>Responsible for the approval</th>
+            <th>Approvers substitute</th>
+            <th>Substituted by</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    <% @users.each do |user| %>
+      <tr>
+          <td><%= link_to user.name, edit_workflow_user_path(user) %></td>
+          <td><%= user.manager.name %></td>
+          <td><%= user.manager.deputy.name %></td>
+          <td><%= user.deputy.name unless user.deputy.nil? %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+  </div>
+  <div class="span4">
+  <li> Request owner - igénylő </li>
+  <li> Responsible for the approval - A szabadság jóváhagyója</li>
+  <li> Approvers substitute - Ő helyettesíti a felelőst ha az szabadságon van</li>
+  <li> Substituted by - Az igénylő helyettesítőjes</li>
+  </div>
+</div>

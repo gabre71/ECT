@@ -1,0 +1,14 @@
+		<legend>Sick-leaves</legend>
+		<table class="table table-striped">
+			<thead>
+				<th>Year</th>
+				<th>Accepted</th>
+				<th>In progress</th>
+				<th>Rejected</th>
+			</thead>
+			<tbody>
+				<tr>
+					<%= render :partial=>"users/user_sick_leave", :locals => {:user => @user }%>
+				</tr>
+			</tbody>
+		</table>

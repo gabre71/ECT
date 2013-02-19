@@ -1,0 +1,37 @@
+<h3>Listing Planned Work Times</h3>
+
+<table class = "table table-condensed">
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Term start</th>
+      <th>Term end</th>
+      <th>Time frame</th>
+      <th>Site</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @planned_work_times.each do |planned_work_time| %>
+      <tr>
+        <td><%= planned_work_time.user.name %></td>
+        <td><%= planned_work_time.from_date %></td>
+        <td><%= planned_work_time.to_date %></td>
+        <td><%= planned_work_time.time_frame.name %></td>
+        <td><%= planned_work_time.work_site.name %></td>
+        <td><%= link_to 'Edit', edit_planned_work_time_path(planned_work_time) , :class => "btn btn-mini btn-primary"%>
+            <%= link_to 'Destroy', planned_work_time, method: :delete, data: { confirm: 'Are you sure?' } ,:class => "btn btn-mini btn-danger"%></td>
+      </tr>
+    <% end %>
+  </tbody> 
+  <tfoot>
+    <tr>
+      <td colspan = "5">
+        <%= link_to 'New Planned Work Time', new_planned_work_time_path ,   :class => "btn btn-mini btn-primary"%>
+      </td>
+    </tr> 
+  </tfoot> 
+</table>
+
+<br />
+

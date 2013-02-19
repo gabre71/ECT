@@ -1,0 +1,26 @@
+  <h3>Report service availability</h3>
+<div id="calendar">
+  <h2 id="month">
+    <%= link_to "<", :month => (@date.beginning_of_month-1).strftime("%Y-%m-%d") %>
+    <%=h @date.strftime("%Y %B") %>
+    <%= link_to ">", :month => (@date.end_of_month+1).strftime("%Y-%m-%d") %>
+  </h3>
+  <%= calendar_for @time_sheets, :year => @date.year, :month => @date.month, :first_day_of_week => 1  do |calendar| %>
+    <%= calendar.head("Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat","Vasárnap") %>
+    <% calendar.day(:day_method => :work_date) do |date, time_sheets| %>
+      <%=link_to date.day, date_view_time_sheet_path(date) %>
+      <ul >
+        <% for time_sheet in time_sheets %>
+          <% unless time_sheet.planned_holiday.nil? %>
+            <small><%= link_to h("#{ time_sheet.work_time_type.name} #{time_sheet.user.name}" ), edit_time_sheet_path(time_sheet), :class=> "event #{get_holiday_color(time_sheet)}"%></small>
+          <% else %>
+            <small><%= link_to h("#{ get_time_from(time_sheet.time_frame.from_time)} #{time_sheet.user.name}" ), edit_time_sheet_path(time_sheet),:class=> "event work" %></small></br>
+          <% end%>
+        <% end%>
+      </ul>
+    <% end %>    
+  <% end %>    
+</div>
+
+
+

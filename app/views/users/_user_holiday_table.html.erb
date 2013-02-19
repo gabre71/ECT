@@ -1,0 +1,20 @@
+		<legend>Holidays</legend>
+		<table class="table table-striped">
+			<thead>
+				<th>Year</th>
+				<th>Holidays</th>
+				<th>Accepted</th>
+				<th>In progress</th>
+				<th>Planned</th>
+				<th>Unused</th>
+			</thead>
+			<tbody class=":nth-child ">
+		  	<% @user.user_holidays.each do |user_holiday| %>
+		  		<% if user_holiday.year.to_i.between?(Time.now.year, Time.now.year+1) %>
+						<tr>
+							<%= render :partial=>"users/user_holiday", :locals => {:user_holiday => user_holiday }%>
+						</tr>
+		  		<% end %>
+	  		<% end %>
+			</tbody>
+		</table>

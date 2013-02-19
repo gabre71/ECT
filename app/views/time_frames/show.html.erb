@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @time_frame.name %>
+</p>
+
+<p>
+  <b>From time:</b>
+  <%= @time_frame.from_time %>
+</p>
+
+<p>
+  <b>To time:</b>
+  <%= @time_frame.to_time %>
+</p>
+
+
+<%= link_to 'Edit', edit_time_frame_path(@time_frame) %> |
+<%= link_to 'Back', time_frames_path %>

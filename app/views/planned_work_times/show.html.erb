@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @planned_work_time.user %>
+</p>
+
+<p>
+  <b>From date:</b>
+  <%= @planned_work_time.from_date %>
+</p>
+
+<p>
+  <b>To date:</b>
+  <%= @planned_work_time.to_date %>
+</p>
+
+<p>
+  <b>Time frame:</b>
+  <%= @planned_work_time.time_frame %>
+</p>
+
+
+<%= link_to 'Edit', edit_planned_work_time_path(@planned_work_time) %> |
+<%= link_to 'Back', planned_work_times_path %>

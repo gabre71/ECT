@@ -1,0 +1,11 @@
+<%= simple_form_for([current_user, @planned_holiday], :html => {:class => 'form-horizontal' } ) do |f| %>
+    <%= f.association :user , :selected => current_user, disabled:  true%>
+    <%= f.input :term_start, :as => :string  %>
+    <%= f.input :term_end, :as => :string  %>
+    <%= f.association :approver, :collection=> get_holiday_approvers , :selected => current_user.manager.id%>
+    <%= f.association :holiday_type, :collection   => WorkTimeType.where("id> ?", 1 ), :selected => WorkTimeType.find(2)   %>
+    <%= f.input :status, :collection   => get_statuses(@planned_holiday), :selected => set_default_status(@planned_holiday) %>
+
+    <%= f.button :submit , "Send request",:class => "btn btn-success"%>
+
+<% end %>

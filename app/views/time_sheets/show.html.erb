@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @time_sheet.user %>
+</p>
+
+<p>
+  <b>Work date:</b>
+  <%= @time_sheet.work_date %>
+</p>
+
+<p>
+  <b>Time frame:</b>
+  <%= @time_sheet.time_frame %>
+</p>
+
+<p>
+  <b>WorkSite:</b>
+  <%= @time_sheet.work_site %>
+</p>
+
+<p>
+  <b>Start time:</b>
+  <%= @time_sheet.start_time %>
+</p>
+
+<p>
+  <b>End time:</b>
+  <%= @time_sheet.end_time %>
+</p>
+
+<p>
+  <b>Lateness:</b>
+  <%= @time_sheet.lateness %>
+</p>
+
+<p>
+  <b>Holiday:</b>
+  <%= @time_sheet.holiday %>
+</p>
+
+
+<%= link_to 'Edit', edit_time_sheet_path(@time_sheet) %> |
+<%= link_to 'Back', time_sheets_path %>

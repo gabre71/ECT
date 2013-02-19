@@ -1,0 +1,185 @@
+// Place all the styles related to the TimeSheets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#calendar table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#calendar td,
+#calendar th {
+  font-family: "Lucida Grande",arial,helvetica,sans-serif;
+  font-size: 12px;
+  padding: 6px;
+  border: 1px solid #999;
+}
+
+#calendar th {
+  background: #DDD;
+  color: #666;
+  text-align: center;
+  width: 14.2857142857143%;
+}
+
+#calendar td {
+  background: #FFF;
+  color: #777;
+  height: 80px;
+  vertical-align: top;
+  font-size: 16px;
+}
+#calendar .thin {
+  background: #FFF;
+  color: #777;
+  height: 20px;
+  vertical-align: center;
+  font-size: 14px;
+}
+
+#calendar .notmonth {
+  color: #CCC;
+}
+
+#calendar #month {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#calendar #month a, #calendar #month a:hover {
+  text-decoration: none;
+  padding: 0 10px;
+  color: #999;
+}
+
+#calendar .today {
+  background-color: #D7F2FF;
+}
+
+#calendar ul {
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+  list-style: none;
+}
+
+#calendar li {
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  text-align: center;
+}
+#calendar .event {
+  margin: 0;
+  padding: 0;
+  font-size: 9px;
+  text-align: center;
+}
+#calendar .work {
+  color: black;
+
+}#calendar .sick {
+  color: red;
+}
+#calendar .requested {
+  color: blue;
+}
+
+#calendar .accepted {
+  color: green;
+}
+
+#calendar_small table {
+  border-collapse: collapse;
+  width: 90%;
+}
+
+#calendar_small td,
+#calendar_small th {
+  font-family: "Lucida Grande",arial,helvetica,sans-serif;
+  font-size: 10px;
+  padding: 6px;
+  border: 1px solid #999;
+}
+
+#calendar_small th {
+  background: #DDD;
+  color: #666;
+  text-align: center;
+  width: 14.2857142857143%;
+}
+
+#calendar_small td {
+  background: #FFF;
+  color: #777;
+  height: 20px;
+  vertical-align: top;
+  font-size: 10px;
+}
+#calendar_small .thin {
+  background: #FFF;
+  color: #777;
+  height: 20px;
+  vertical-align: center;
+  font-size: 10px;
+}
+
+#calendar_small .notmonth {
+  color: #CCC;
+}
+
+#calendar_small #month {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+#calendar_small #month a, #calendar_small #month a:hover {
+  text-decoration: none;
+  padding: 0 10px;
+  color: #999;
+}
+
+#calendar_small .today {
+  background-color: #D7F2FF;
+}
+
+#calendar_small ul {
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+  list-style: none;
+}
+
+#calendar_small li {
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  text-align: center;
+}
+#calendar_small .event {
+  margin: 0;
+  padding: 0;
+  font-size: 9px;
+  text-align: center;
+}
+#calendar_small .work {
+  color: black;
+
+}#calendar_small .sick {
+  color: red;
+}
+#calendar_small .requested {
+  color: blue;
+}
+
+#calendar_small .accepted {
+  color: green;
+}
+
+#calendar_small .planned {
+  color: brown;
+}

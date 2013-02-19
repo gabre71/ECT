@@ -1,0 +1,89 @@
+<h3>Holiday approval</h3>
+
+<legend>Requests of owned users</legend>
+<table class ="table table-condensed">
+  <thead>
+    <tr>
+      <th>Request owner</th>
+      <th>Term start</th>
+      <th>Term end</th>
+      <th>Days</th>
+      <th>Approver</th>
+      <th>Holiday type</th>
+      <th>Status</th>
+      <th></th>
+    </tr>
+  </head>
+  <tbody>
+    <% @owned_users.each do |user| %>
+      <% user.acceptable_holidays.each do |planned_holiday| %>
+        <tr class= "<%= planned_holiday_color_helper(planned_holiday)%>" >
+          <td><%= planned_holiday.user.name %></td>
+          <td><%= planned_holiday.term_start %></td>
+          <td><%= planned_holiday.term_end %></td>
+          <td><%= planned_holiday.holidays_count %></td>
+          <td><%= planned_holiday.approver.name %></td>
+          <td><%= planned_holiday.holiday_type.name %></td>
+          <td><%= planned_holiday_status_helper(planned_holiday) %></td>
+          <td>
+            <div class="btn-group">
+              <% unless planned_holiday_actions_helper(planned_holiday, "approval") == "" %>              
+                <a class="btn btn-mini btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Action<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <%= planned_holiday_actions_helper(planned_holiday, "approval")%>
+                </ul>
+              <% end %>
+            </div>
+          </td> 
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+  <tfoot>
+  <tfoot>
+  </tfoot>
+</table>
+
+<legend>Requests of substituted users</legend>
+<table class ="table table-condensed">
+  <thead>
+    <tr>
+      <th>Request owner</th>
+      <th>Term start</th>
+      <th>Term end</th>
+      <th>Days</th>
+      <th>Approver</th>
+      <th>Holiday type</th>
+      <th>Status</th>
+      <th></th>
+    </tr>
+  </head>
+  <tbody>
+    <% @subsituted_users.each do |user| %>
+      <% user.acceptable_holidays.each do |planned_holiday| %>
+        <tr class= "<%= planned_holiday_color_helper(planned_holiday)%>" >
+          <td><%= planned_holiday.user.name %></td>
+          <td><%= planned_holiday.term_start %></td>
+          <td><%= planned_holiday.term_end %></td>
+          <td><%= planned_holiday.holidays_count %></td>
+          <td><%= planned_holiday.approver.name %></td>
+          <td><%= planned_holiday.holiday_type.name %></td>
+          <td><%= planned_holiday_status_helper(planned_holiday) %></td>
+          <td>
+            <div class="btn-group">
+              <% unless planned_holiday_actions_helper(planned_holiday, "approval") == "" %>              
+                <a class="btn btn-mini btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Action<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <%= planned_holiday_actions_helper(planned_holiday, "approval")%>
+                </ul>
+              <% end %>
+            </div>
+          </td> 
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+  <tfoot>
+  <tfoot>
+  </tfoot>
+</table>

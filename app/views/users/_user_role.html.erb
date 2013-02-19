@@ -1,0 +1,5 @@
+  <legend>User role</legend>
+  <%= simple_form_for @user, :url => user_path(@user), :html => {:method => :put, :class => 'form-horizontal' } do |f| %>
+      <%= f.input :role_ids, :collection => Role.all, :as => :radio_buttons, :label_method => lambda {|t| t.name.titleize}, :label => false%>
+      <%= f.submit "Change Role", :class => "btn btn-success" %>
+  <% end %>

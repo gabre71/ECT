@@ -1,0 +1,12 @@
+rake db:drop RAILS_ENV=production
+rake db:create RAILS_ENV=production
+rake db:migrate RAILS_ENV=production
+rake db:seed RAILS_ENV=production
+bundle exec rake assets:precompile
+
+
+
+Megszűntetett menüpontok:
+
+<li><%= link_to "Employee administration old", show_employee_users_path %></li>
+<li><%= link_to "User profile", edit_user_registration_path%></li>

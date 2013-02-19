@@ -1,0 +1,9 @@
+<%= simple_form_for(@time_frame, :html => {:class => 'form-horizontal' } ) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :from_time, :as => :string , :label => "Timeframe start"%>
+    <%= f.input :to_time, :as => :string , :label => "Timeframe end"%>
+    <%= f.input :cc_start_time, :as => :string, :label => "Callcenter login"%>
+    <%= f.input :cc_end_time, :as => :string, :label => "Callcenter logoff"%>
+    <%= f.input :inactive%>
+    <%= f.button :submit , "Create Timeframe", :class => "btn btn-large btn-success"%>
+<% end %>

@@ -1,0 +1,10 @@
+<%= simple_form_for(@planned_work_time, :html => {:class => 'form-horizontal' } ) do |f| %>
+  <div class="form-inputs">
+    <%= f.association :user %>
+    <%= f.input :from_date, :as => :string, :label => "Term start"%>
+    <%= f.input :to_date, :as => :string, :label => "Term end" %>
+    <%= f.association :time_frame , :collection => TimeFrame.where(:inactive => 0), :label => "Timeframe" %>
+    <%= f.association :work_site , :collection => WorkSite.all, :label => "Site" %>
+    <%= f.button :submit, :class => "btn btn-large btn-success"%>
+  </div>
+<% end %>

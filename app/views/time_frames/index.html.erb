@@ -1,0 +1,35 @@
+<h3>Listing Timeframes</h3>
+
+<table class ="table table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Timeframe start</th>
+      <th>Timeframe end</th>
+      <th>Callcenter login</th>
+      <th>Callcenter logoff</th>
+      <th></th>
+    </tr>
+  </head>
+  <tbody>
+    <% @time_frames.each do |time_frame| %>
+      <tr>
+        <td><%= time_frame.name %></td>
+        <td><%= get_time_from(time_frame.from_time) %></td>
+        <td><%= get_time_from(time_frame.to_time) %></td>
+        <td><%= get_time_from(time_frame.cc_start_time) %></td>
+        <td><%= get_time_from(time_frame.cc_end_time) %></td>
+        <td><%= link_to 'Edit', edit_time_frame_path(time_frame) , :class => "btn btn-mini btn-primary"%>
+            <%= link_to 'Destroy', time_frame, method: :delete, data: { confirm: 'Are you sure?' } , :class => "btn btn-mini btn-danger"%></td>
+      </tr>
+    <% end %>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan ="5">
+        <%= link_to 'New Timeframe', new_time_frame_path , :class => "btn btn-mini btn-primary"%>
+      </td>
+    </tr>
+</tfoot>
+</table>
+

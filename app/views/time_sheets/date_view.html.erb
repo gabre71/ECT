@@ -1,0 +1,37 @@
+<table id = "calendar">
+  <thead>
+    <tr>
+      <th>From</th>
+      <th>User</th>
+      <th>WorkSite</th>
+      <th>Start time</th>
+      <th>End time</th>
+      <th>Lateness</th>
+      <th>Holiday</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @time_sheets.each do |time_sheet| %>
+      <tr>
+        <td class = "thin"><%= get_time_from(time_sheet.time_frame.from_time) %></td>
+        <td class = "thin"><%= time_sheet.user.name %></td>
+        <td class = "thin"><%= time_sheet.work_site.name %></td>
+        <td class = "thin"><%= get_time_from(time_sheet.start_time) %></td>
+        <td class = "thin"><%= get_time_from(time_sheet.cc_start_time) %></td>
+        <td class = "thin"><%= get_time_from(time_sheet.cc_end_time) %></td>
+        <td class = "thin"><%= time_sheet.lateness %></td>
+        <td class = "thin"><%= link_to 'Edit', edit_time_sheet_path(time_sheet, :type=> "day"), :class => "btn btn-mini btn-primary" %></td>
+        <td class = "thin"><%= link_to 'Destroy', time_sheet, method: :delete, data: { confirm: 'Are you sure?' } , :class => "btn btn-mini btn-danger"%></td>
+      </tr>
+    <% end %>
+  <tbody>
+  <tfoot>!
+    <tr>
+      <td class = "thin" colspan ="9">
+        <%= link_to 'Back', time_sheets_path(:month=> @date) , :class => "btn btn-mini btn-primary" %>
+      </td>
+    </tr> 
+  </tfoot>
+</table>

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @planned_holiday.user %>
+</p>
+
+<p>
+  <b>Term start:</b>
+  <%= @planned_holiday.term_start %>
+</p>
+
+<p>
+  <b>Term end:</b>
+  <%= @planned_holiday.term_end %>
+</p>
+
+<p>
+  <b>Approver:</b>
+  <%= @planned_holiday.approver %>
+</p>
+
+<p>
+  <b>Holiday type:</b>
+  <%= @planned_holiday.holiday_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_planned_holiday_path(@planned_holiday) %> |
+<%= link_to 'Back', planned_holidays_path %>

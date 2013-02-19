@@ -1,0 +1,463 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Lo",
+				"link_to"
+			],
+			[
+				"copy",
+				"copy_file_base"
+			],
+			[
+				"Wok",
+				"WorkSpaceBase"
+			],
+			[
+				"file_",
+				"file_rootable_type"
+			],
+			[
+				"na",
+				"name"
+			],
+			[
+				"current",
+				"current_user"
+			],
+			[
+				"wo",
+				"work_spaces"
+			],
+			[
+				"s3",
+				"s3_folder"
+			],
+			[
+				"wor",
+				"work_spaces"
+			],
+			[
+				"vers",
+				"version"
+			],
+			[
+				"is",
+				"is_a"
+			],
+			[
+				"work",
+				"work_spaces"
+			],
+			[
+				"new",
+				"new_version"
+			],
+			[
+				"am",
+				"amazon_file_name"
+			],
+			[
+				"ch",
+				"check_in"
+			],
+			[
+				"fil",
+				"file_rootable"
+			],
+			[
+				"curre",
+				"current_s3_file"
+			],
+			[
+				"on",
+				"one_file_with_versions"
+			],
+			[
+				"S3",
+				"S3FileBase"
+			],
+			[
+				"tea",
+				"team_space"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/controllers/home_controller.rb",
+			"settings":
+			{
+				"buffer_size": 67,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/home/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 14,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 96.0,
+		"selected_items":
+		[
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 503.0
+	},
+	"console":
+	{
+		"height": 283.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/rene/rails-projects/ect/app/views/layouts/_navigation.html.erb",
+		"/home/rene/rails-projects/ect/app/views/layouts/application.html.erb",
+		"/home/rene/rails-projects/ect/config/application.yml",
+		"/home/rene/rails-projects/ect/app/models/user.rb",
+		"/home/rene/rails-projects/ect/app/views/devise/registrations/edit.html.erb",
+		"/home/rene/rails-projects/ect/app/views/devise/registrations/new.html.erb",
+		"/home/rene/rails-projects/ect/config/routes.rb",
+		"/home/rene/rails-projects/ect/app/views/layouts/_messages.html.erb",
+		"/home/rene/rails-projects/ect/app/assets/stylesheets/application.css.scss",
+		"/home/rene/rails-projects/ect/spec/factories/users.rb",
+		"/home/rene/rails-projects/ect/db/migrate/20130107144413_devise_create_users.rb",
+		"/home/rene/rails-projects/ect/db/migrate/20130107145538_rolify_create_roles.rb",
+		"/home/rene/rails-projects/ect/db/migrate/20130107145650_add_name_to_users.rb",
+		"/home/rene/rails-projects/ect/app/assets/stylesheets/bootstrap_and_overrides.css.scss",
+		"/home/rene/rails-projects/ect/config/application.rb",
+		"/home/rene/rails-projects/ect/app/views/devise/sessions/new.html.erb",
+		"/home/rene/rails-projects/ect/app/models/ability.rb",
+		"/home/rene/rails-projects/ect/app/controllers/application_controller.rb",
+		"/home/rene/rails-projects/ect/app/assets/javascripts/application.js",
+		"/home/rene/rails-projects/ect/Gemfile",
+		"/home/rene/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/rene/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/rene/rails-projects/ect/config/initializers/devise.rb",
+		"/home/rene/rails-projects/ect/app/helpers/application_helper.rb",
+		"/home/rene/rails-projects/bdc/rails3-bootstrap-devise-cancan/Gemfile",
+		"/home/rene/.config/sublime-text-2/Packages/User/SVN.errors.log",
+		"/home/rene/rails-projects/ect/Gemfile.lock",
+		"/home/rene/rails-projects/ect/config/database.yml",
+		"/home/rene/rails-projects/easy-monday/config/database.yml",
+		"/home/rene/rails-projects/ect/.rvmrc",
+		"/home/rene/rails-projects/redmine-2.1/.rvmrc",
+		"/home/rene/rails-projects/redmine-2.1/Rakefile",
+		"/home/rene/rails-projects/redmine-2.1/plugins/redmine_backlogs/Gemfile",
+		"/home/rene/rails-projects/redmine-2.1/.rvmrc~",
+		"/home/rene/rails-projects/redmine-2.1/config/database.yml",
+		"/home/rene/rails-projects/ict/app/models/project.rb",
+		"/home/rene/rails-projects/ict/app/models/user.rb",
+		"/home/rene/rails-projects/ict/app/models/country.rb",
+		"/home/rene/rails-projects/ict/app/views/layouts/application.html.erb",
+		"/home/rene/rails-projects/ict/app/models/ability.rb",
+		"/home/rene/rails-projects/ict/app/views/projects/_project.html.erb",
+		"/home/rene/rails-projects/ict/app/controllers/projects_controller.rb",
+		"/tmp/sublime-svn-1353075798/SVN",
+		"/tmp/sublime-svn-1353074446/SVN",
+		"/home/rene/rails-projects/ict/app/controllers/users_controller.rb",
+		"/home/rene/rails-projects/ict/app/controllers/user_sessions_controller.rb",
+		"/home/rene/rails-projects/ict/Gemfile",
+		"/home/rene/rails-projects/ict/config/routes.rb",
+		"/home/rene/rails-projects/ict/config/database.yml",
+		"/home/rene/dumps/Dump20121011-3.sql",
+		"/home/rene/dumps/Dump20121011-3.sql.db",
+		"/home/rene/dumps/Dump20121011-1.sql.db",
+		"/home/rene/dumps/mysql2sqlite.sh",
+		"/home/rene/dumps/Dump20121011-1.sql",
+		"/home/rene/dumps/Dump20121011-2/organiq1_ocrm_countries.sql",
+		"/home/rene/dumps/Dump20121011-1/organiq1_ocrm_projects.sql",
+		"/home/rene/dumps/Dump20121010/organiq1_ocrm_projects.sql",
+		"/home/rene/dumps/Dump20121011/organiq1_ocrm_projects.sql",
+		"/home/rene/dumps/Dump20121010/organiq1_ocrm_users.sql",
+		"/home/rene/dumps/Dump20121010/organiq1_ocrm_regions.sql",
+		"/home/rene/rails-projects/ict/app/views/projects/_history.html.erb",
+		"/home/rene/dumps/Dump20121010/organiq1_ocrm_countries.sql",
+		"/home/rene/rails-projects/ict/db/versions.csv",
+		"/home/rene/rails-projects/easy-monday/app/helpers/s3_folders_helper.rb",
+		"/home/rene/rails-projects/easy-monday/app/controllers/s3_folders_controller.rb",
+		"/home/rene/rails-projects/easy-monday/app/views/s3_folders/_copy.html.erb",
+		"/home/rene/rails-projects/easy-monday/app/models/s3_file_base.rb",
+		"/home/rene/rails-projects/easy-monday/app/models/s3_file.rb",
+		"/home/rene/rails-projects/easy-monday/spec/models/s3_file_base_spec.rb",
+		"/tmp/sublime-svn-1348738998/SVN",
+		"/home/rene/rails-projects/easy-monday/spec/factories/user.rb",
+		"/home/rene/rails-projects/easy-monday/lib/aws_lib.rb",
+		"/home/rene/rails-projects/easy-monday/app/models/s3_folder.rb",
+		"/home/rene/rails-projects/easy-monday/lib/teszt.rb",
+		"/home/rene/rails-projects/easy-monday/log/s3_file_base.log",
+		"/home/rene/rails-projects/easy-monday/spec/models/s3_file_spec.rb",
+		"/home/rene/rails-projects/easy-monday/app/controllers/file_work_space_connection_controller.rb",
+		"/home/rene/rails-projects/easy-monday/app/controllers/application_controller.rb",
+		"/home/rene/rails-projects/easy-monday/app/controllers/registrations_controller.rb"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"hoe",
+			"rake",
+			"ruby",
+			"Notifications",
+			"view",
+			"show",
+			"import",
+			"view",
+			"history",
+			"show",
+			"\\'s",
+			"\\'12",
+			"),(",
+			"'s",
+			"),(",
+			"'12",
+			"),(",
+			"'12",
+			"),(",
+			"'12",
+			"),(",
+			"'12",
+			"12",
+			"'12",
+			"12'",
+			"tinyint(1)",
+			"INT(11)",
+			"read",
+			"show",
+			"read",
+			"event",
+			"reify",
+			"coerce",
+			"create",
+			"create_owner",
+			"name",
+			"require_user",
+			"has_paper",
+			"view",
+			"@chang",
+			"view",
+			"req",
+			"view",
+			"destr",
+			"delete",
+			"name",
+			"copy",
+			"new_record",
+			"amazon",
+			"create",
+			"amazon_file_name",
+			"update_amazon_file_name",
+			"amazon_file_name",
+			"update_amazon_file_name",
+			"amazon_file_name",
+			"copy",
+			"puts",
+			"new_version",
+			"rename_on_s3",
+			"deleted?",
+			"rename_on_s3",
+			"rename",
+			"renaem",
+			"private work space",
+			"example team space",
+			"full	",
+			"full",
+			"view",
+			"tabs"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"''s",
+			"''12",
+			"12",
+			"BOOLEAN",
+			"INTEGER"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/controllers/home_controller.rb",
+					"settings":
+					{
+						"buffer_size": 67,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/home/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 14,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14,
+								14
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"use",
+				"app/models/user.rb"
+			],
+			[
+				"users",
+				"spec/factories/users.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/rene/rails-projects/ict/ict.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 417.0,
+	"status_bar_visible": true
+}
